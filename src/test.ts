@@ -1,8 +1,10 @@
-import excel from "../src/Controller/ExcelController";
+import excel from "./Controller/ApiController";
 
 (async()=>{
-    const data = excel.ExcelToJSON();
-    console.log(data.length);
+    const data = await excel
+    .ExcelToJSON()
+    .catch(er=>{console.log(er); return "";});
+    console.log(data);
     
     
 })()
