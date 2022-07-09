@@ -4,6 +4,8 @@ to install dependencies
 to run the program
     - npm run dev
 
+to run test
+    - npm run test
 environment
     - .env
 
